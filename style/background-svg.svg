@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1000 1000">
+  <rect width="100%" height="100%" fill="#0f0f0f"/>
+  <g fill="none" stroke="#4a69bd" stroke-width="2" opacity="0.1">
+    <path d="M0 200 L1000 150" />
+    <path d="M0 400 L1000 450" />
+    <path d="M0 600 L1000 550" />
+    <path d="M0 800 L1000 850" />
+    <path d="M200 0 L150 1000" />
+    <path d="M400 0 L450 1000" />
+    <path d="M600 0 L550 1000" />
+    <path d="M800 0 L850 1000" />
+  </g>
+</svg>

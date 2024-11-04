@@ -1,0 +1,212 @@
+body {
+    background-color: #0f0f0f;
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(26, 26, 26, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    background-image: url('background-svg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #4a69bd;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.logout-btn {
+    background: #dc3545;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 15px;
+    transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: #c82333;
+}
+
+.transaction-form, .summary {
+    margin: 10px auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox layout to align form and summary side by side */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Responsive layout for smaller screens */
+}
+
+.transaction-form {
+    width: 48%; /* Adjust width to fit the screen */
+}
+
+.summary {
+    width: 48%; /* Adjust width to fit the screen */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4a69bd;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4a69bd;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #e0e0e0;
+}
+
+.form-group input {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #4a69bd;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #e0e0e0;
+}
+
+.submit-btn {
+    display: inline-block;
+    background: #4a69bd;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #3d5aa8;
+}
+
+.transaction-list {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+th {
+    background-color: rgba(74, 105, 189, 0.2);
+    color: #4a69bd;
+}
+
+
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: rgba(40, 167, 69, 0.2);
+    border: 1px solid #28a745;
+    color: #28a745;
+}
+
+.error {
+    background-color: rgba(220, 53, 69, 0.2);
+    border: 1px solid #dc3545;
+    color: #dc3545;
+}
+
+.pp {
+    margin-right: 1%;
+    border: 1px solid white;
+    padding: 5px;
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+    border-radius: 10%; /* Make it a circle */
+    object-fit: cover; /* Ensure the image doesn't stretch */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .transaction-form, .summary {
+        width: 100%;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+
+    .transaction-list {
+        padding: 20px;
+    }
+    
+    .logout-btn {
+        width: auto;
+    }
+
+    .user-info {
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+    }
+}
